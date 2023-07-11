@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+    <h1>Complete con sus datos para el registro</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{form}}
+        <button>
+            Registrar
+        </button>
+    </form>
+
+{% endblock %}
